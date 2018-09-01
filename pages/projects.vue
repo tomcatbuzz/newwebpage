@@ -1,6 +1,6 @@
 <template>
   <v-layout column>
-    <v-flex xs12 sm6 offset-sm3>
+    <v-flex xs12 sm6>
       <v-card>
         <v-container
           fluid

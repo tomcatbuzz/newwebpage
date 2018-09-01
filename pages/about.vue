@@ -1,7 +1,6 @@
 <template>
-  <v-jumbotron
-    :gradient="gradient"
-    dark
+  <v-img
+    gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
     src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
   >
     <v-container fill-height>
@@ -21,13 +20,5 @@
       </v-flex>
     </v-layout>
     </v-container>
-  </v-jumbotron>
+  </v-img>
 </template>
-
-<script>
-  export default {
-    data: () => ({
-      gradient: 'to top right, rgba(63,81,181, .7), rgba(25,32,72, .7)'
-    })
-  }
-</script>

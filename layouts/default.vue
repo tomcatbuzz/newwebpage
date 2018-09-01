@@ -23,11 +23,11 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed app color="primary">
+    <v-toolbar fixed app color="primary" scroll-toolbar-off-screen scroll-threshold="200">
       <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items>
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn 
         flat
         to="/">
@@ -77,6 +77,7 @@
   export default {
     data () {
       return {
+        hidden: false,
         drawer: null,
         items: [
           { icon: 'apps', title: 'Home', to: '/' },
